@@ -14,7 +14,6 @@ export default function CompleteNavbar() {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle} />
-      <Home />
     </>
   );
 }

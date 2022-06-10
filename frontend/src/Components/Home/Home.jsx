@@ -2,11 +2,12 @@ import React,{useState} from "react";
 import TypeWriterEffect from "react-typewriter-effect";
 import { HomeContainer, HomeBG, VideoBG,HomeContent,HomeP,HomeH1,HomeBtnWrapper,ArrowForward,ArrowRight } from "./HomeElements";
 import HomeVideo from "./assets/HomeVideo2.mp4";
+import { Button } from "../ButtonElements";
 
 export default function Home() {
   const [hover,setHover] = useState(false)
 
-  const onhover = ()=> {setHover(!hover)}
+  const onHover = ()=> {setHover(!hover)}
 
   return (
     <HomeContainer>
@@ -15,11 +16,11 @@ export default function Home() {
       </HomeBG>
       <HomeContent>
         <HomeP>HI THERE, I'M </HomeP>
-        <HomeH1>
-          Shubham Maurya
-          <TypeWriterEffect
+        <HomeH1>Shubham Maurya</HomeH1>
+          <HomeH1><TypeWriterEffect
             textStyle={{
               color: "#f55422",
+              fontWeight: "bold"
             }}
             startDelay={1000}
             cursorColor="#f55422"
@@ -32,10 +33,10 @@ export default function Home() {
             multiTextDelay={1000}
             typeSpeed={60}
             multiTextLoop
-          />
-        </HomeH1>
+          /></HomeH1>
+        
         <HomeBtnWrapper>
-          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
             See More About me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HomeBtnWrapper>
