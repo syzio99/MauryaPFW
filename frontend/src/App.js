@@ -1,23 +1,15 @@
 import React from "react";
-import Home from "./Components/Home/Home";
-import {BrowserRouter as Router} from 'react-router-dom';
-import CompleteNavbar from "./pages/CompleteNavbar";
-import About from "./Components/About/about"
-import {homeObjOne,homeObjTwo,homeObjThree} from "./Components/About/Data"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // install router -> npm i react-router-dom
-
+import MainPage from "./pages/MainPage";
 
 const App = () => {
   return (
- 
-        <Router>
-        <CompleteNavbar />
-        <Home />
-        <About {...homeObjOne}/>
-        {/* <About {...homeObjTwo}/> */}
-        {/* <About {...homeObjThree}/> */}
-        </Router>
-    
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+      </Routes>
+    </Router>
   );
 };
 

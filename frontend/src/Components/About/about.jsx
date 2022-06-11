@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import {useNavigate} from 'react-router-dom';
 import {
   AboutContainer,
   AboutWrapper,
@@ -31,6 +32,14 @@ const About = ({id,
     dark,
     primary,
     darkText}) => {
+
+      // const navigate = useNavigate();
+      // const navigateHome = () => {
+      //   // 👇️ navigate to /
+      //   navigate('https://bobbyhadz.com/blog/react-onclick-redirect');
+      // };
+
+
   return (
     <>
       <AboutContainer lightBg={lightBg}  id={id}>
@@ -43,7 +52,7 @@ const About = ({id,
                 <Subtitle darkText={darkText} >{description}</Subtitle>
                 <Subtitle2 darkText={darkText} >{description2}</Subtitle2>
                 <BtnWrap>
-                  <Button to="about" 
+                  <Button onClick={()=>window.open('https://drive.google.com/drive/folders/16aW-UlFcLonCofo1IJpnr_vbahaI1ChT?usp=sharing','_blank')} target='_blank'
                   smooth={true}
                   spy={true}
                   exact="true"
