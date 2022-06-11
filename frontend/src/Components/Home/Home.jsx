@@ -10,9 +10,14 @@ import {
   HomeBtnWrapper,
   ArrowForward,
   ArrowRight,
+  SocailIcon,
+  SocialIconLink,
 } from "./HomeElements";
 import HomeVideo from "./assets/HomeVideo2.mp4";
 import { Button } from "../ButtonElements";
+import {FaLinkedinIn,FaGithubAlt,FaTwitter } from "react-icons/fa"  
+
+
 
 export default function Home() {
   const [hover, setHover] = useState(false);
@@ -22,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <HomeBG>
         <VideoBG autoPlay loop muted src={HomeVideo} type="video/mp4" />
       </HomeBG>
@@ -48,6 +53,29 @@ export default function Home() {
             multiTextLoop
           />
         </HomeH1>
+        <SocailIcon>
+          <SocialIconLink
+            href="https://www.linkedin.com/in/syzio99/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
+          </SocialIconLink>
+          <SocialIconLink
+            href="https://github.com/syzio99"
+            target="_blank"
+            aria-label="github"
+          >
+            <FaGithubAlt />
+          </SocialIconLink>
+          <SocialIconLink
+            href="https://twitter.com/"
+            target="_blank"
+            aria-label="twitter"
+          >
+            <FaTwitter />
+          </SocialIconLink>
+        </SocailIcon>
 
         <HomeBtnWrapper>
           <Button
@@ -59,32 +87,13 @@ export default function Home() {
             smooth={true}
             spy={true}
             exact="true"
-                 
           >
             See More About me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HomeBtnWrapper>
+        
       </HomeContent>
     </HomeContainer>
   );
 }
 
-
-
-  /* <div className="home-social-icon">
-        <a href="/">
-          <i className="bi bi-facebook"></i>
-        </a>
-        <a href="/">
-          <i className="bi bi-linkedin"></i>
-        </a>
-        <a href="/">
-          <i className="bi bi-twitter"></i>
-        </a>
-      </div> */
-
-
-  /* <div className="home-buttons">
-        <button className="btn btn-primary"> See More About me -> </button>
-        <button className="btn btn-primary"> Resume</button>
-      </div> */

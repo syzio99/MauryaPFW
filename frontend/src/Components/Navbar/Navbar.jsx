@@ -36,10 +36,10 @@ export default function Navbar({ toggle }) {
               <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Resume">Resume</NavLinks>
+              <NavLinks to="resume">Resume</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contact">Contact</NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarConatiner>

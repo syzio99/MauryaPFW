@@ -105,3 +105,20 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const SocailIcon = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+
+  &:hover {
+    color: #f55422;
+  }
+`;
