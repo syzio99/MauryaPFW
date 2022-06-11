@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {MdArrowForward,MdKeyboardArrowRight} from 'react-icons/md'
+import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const HomeContainer = styled.div`
   background: #0c0c0c;
@@ -11,21 +11,19 @@ export const HomeContainer = styled.div`
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
-  ::before{
+  ::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, 
-      rgba(0,0,0,0.2) 0%,
-      rgba(0,0,0,0.6) 100%
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
       ),
-      linear-gradient(180deg,
-      rgba(0,0,0,0.2) 0%,
-      transparent 100%
-      );
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 `;
 
@@ -51,7 +49,6 @@ export const VideoBG = styled.video`
   background-repeat: no-repeat;
 `;
 
-
 export const HomeContent = styled.div`
   z-index: 3;
   max-width: 1200px;
@@ -60,51 +57,51 @@ export const HomeContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 export const HomeP = styled.p`
-  margin-top:24px;
-  color:#fff;
+  margin-top: 24px;
+  color: #fff;
   font-size: 24px;
   text-align: center;
   max-width: 600px;
   font-weight: bold;
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width: 768px) {
     font-size: 24px;
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`
+`;
 
 export const HomeH1 = styled.h1`
-  color:#fff;
+  color: #fff;
   font-size: 72px;
   text-align: center;
   font-weight: bold;
   letter-spacing: 0;
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width: 768px) {
     font-size: 56px;
   }
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`
+`;
 export const HomeBtnWrapper = styled.div`
-  margin-top:32px;
-  display:flex;
-  flex-direction:column;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-`
+`;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
-`
+`;
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`
+`;

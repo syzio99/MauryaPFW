@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import {Link} from 'react-scroll';
+// import {Link} from "react-router"
 
 export const Button = styled(Link)`
-    border-radius: 0px;
+    border-radius: 0;
     background: ${({primary}) => (primary ? '#f55422' : '#010606') } ;
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? "010606" : "#fff")};
+    color: ${({dark}) => (dark ? "#010606" : "#fff")};
     font-size: ${({fontBig}) => (fontBig ? "20px" : "16px")};
     outline: none;
     border: none;
