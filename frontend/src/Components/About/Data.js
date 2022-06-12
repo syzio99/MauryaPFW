@@ -3,8 +3,8 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topline: "Namaste! Everyone, I am ",
-  headline: "shubham",
+  topline: "Namaste!! ",
+  headline: "I'm shubham",
   description:
     " 👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
   ButtonLabel: "Download Resume",

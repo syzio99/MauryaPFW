@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import { 
     FooterContainer,
     FooterWarp,
@@ -11,11 +12,14 @@ import {
 import {FaLinkedinIn,FaGithubAlt,FaTwitter } from "react-icons/fa"  
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <FooterContainer>
         <FooterWarp>
-                    <Logo to="/">Shubham</Logo>
+                    <Logo to="/" onClick={toggleHome}>Shubham</Logo>
                     <SocailIcon>
                         <SocialIconLink href="https://www.linkedin.com/in/syzio99/" target="_blank" aria-label="LinkedIn"><FaLinkedinIn /></SocialIconLink>
                         <SocialIconLink href="https://github.com/syzio99" target="_blank" aria-label="github"><FaGithubAlt /></SocialIconLink>

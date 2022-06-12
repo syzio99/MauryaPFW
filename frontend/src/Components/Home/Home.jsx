@@ -85,8 +85,10 @@ export default function Home() {
             primary="true"
             dark="true"
             smooth={true}
+            duration={500}
             spy={true}
             exact="true"
+            offset={-80}
           >
             See More About me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
