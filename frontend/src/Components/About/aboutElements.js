@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import Bg from "../../images/BlackBg4.jpg"
 
 export const AboutContainer = styled.div`
   /* color: #fff; */
   background-color: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  /* background-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(${Bg}) ;;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;  */
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;

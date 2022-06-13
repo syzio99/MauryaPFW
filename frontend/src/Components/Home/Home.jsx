@@ -32,21 +32,22 @@ export default function Home() {
         <VideoBG autoPlay loop muted src={HomeVideo} type="video/mp4" />
       </HomeBG>
       <HomeContent>
-        <HomeP>HI THERE 👋, I'M </HomeP>
+        <HomeP>HI THERE, I'M </HomeP>
         <HomeH1>Shubham Maurya</HomeH1>
         <HomeH1>
           <TypeWriterEffect
             textStyle={{
               color: "#f55422",
               fontWeight: "bold",
+              fontSize:"32px"
             }}
             startDelay={1000}
             cursorColor="#f55422"
             multiText={[
-              "Software Developer ",
-              "Front End Developer ",
-              "Full Stack Developer ",
-              "MERN Stack Developer ",
+              "Software Developer",
+              "Front End Developer",
+              "Full Stack Developer",
+              "MERN Stack Developer",
             ]}
             multiTextDelay={1000}
             typeSpeed={60}

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Bg from "../../images/BlackBg2.jpg"
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -7,6 +8,10 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #010606;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.1)),url(${Bg}) ;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 
   @media screen and (max-width: 768px) {
     height: 1100px;

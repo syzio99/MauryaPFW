@@ -3,10 +3,9 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topline: "Namaste!! ",
+  topline: "🙏 Namaste!! ",
   headline: "I'm shubham",
-  description:
-    " 👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+  description:"I am an Indian Computer Science Graduate, I work with front-end frameworks like React. ",
   ButtonLabel: "Download Resume",
   imgStart: false,
   img: require("../../images/profile.png"),

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
-import {useNavigate} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 import {
   AboutContainer,
   AboutWrapper,

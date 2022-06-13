@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  background-color: #f55422;
+   background: linear-gradient( rgba(0,0,0,1), rgba(0,0,0,1));
 `;
 
 export const FooterWarp = styled.div`
-  padding: 48px 24px;
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@ export const SocialLinksWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 40px auto 0 auto;
+  margin: 24px auto 0 auto;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -40,12 +40,12 @@ export const Logo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
-    color: black;
+    color: #f55422;
     text-decoration: none;
   }
 `;
@@ -63,7 +63,7 @@ export const SocialIconLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: black;
+    color: #f55422;
   }
 `;
 
