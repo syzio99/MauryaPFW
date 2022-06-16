@@ -1,6 +1,6 @@
-.custom-btn{
+.custom-btn {
     border-radius: 0;
-    background:#f55422;
+    background: #f55422;
     white-space: nowrap;
     padding: 12px 30px;
     color: black;
@@ -14,12 +14,45 @@
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     width: 100%;
-    
+
 }
 
-.custom-btn:hover{
+.custom-btn:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff ;
+    background: #fff;
     color: black;
-} 
+}
 
+.transparent-input {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 0;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: #f55422 !important;
+    color: white;
+
+}

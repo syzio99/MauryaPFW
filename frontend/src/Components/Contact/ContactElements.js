@@ -16,12 +16,13 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  /* height: 860px; */
+  height: 860px;
   width: 100% max-width 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+  align-items: center;
 `;
 
 export const AboutRow = styled.div`
@@ -81,9 +82,12 @@ export const Subtitle = styled.p`
   color: #fff;
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 24px;
   /* color: ${({ darkText }) => (darkText ? "#010606" : "#fff")}; */
+  /* @media screen and (max-width: 480px) {
+    font-size: 18px;
+  } */
 `;
 
 export const BtnWrap = styled.div`
