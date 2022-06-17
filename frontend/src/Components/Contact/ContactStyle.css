@@ -57,7 +57,9 @@
 
 @media screen and (max-width: 768px) {
     .contactContainer {
-        height: 1100px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        height: fit-content;
     }
 
 }
@@ -66,7 +68,9 @@
 
 @media screen and (max-width: 480px) {
     .contactContainer {
-        height: 1300px;
+        height: fit-content;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .contactHeading {
@@ -77,10 +81,10 @@
         font-size: 32px;
       
     }
-    .contact-ani{
+    /* .contact-ani{
         padding-bottom: 64px;
-    }
-    .contact-right{
+    } */
+    /* .contact-right{
         padding-bottom: 64px;
-    }
+    } */
 }

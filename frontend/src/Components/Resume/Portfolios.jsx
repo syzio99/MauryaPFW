@@ -21,7 +21,7 @@ export default function Portfolios() {
           <PortfolioCard {...PortfolioCardThree} />
         </div>
       </div>
-      <div className="row  portfolio-button-wrapper">
+      <div className="row  portfolio-button-wrapper mb-3">
         <Button
           onClick={() => window.open("https://github.com/syzio99", "_blank")}
           target="_blank"
