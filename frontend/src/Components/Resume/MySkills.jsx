@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Python from "../../images/python.png";
 import Java from "../../images/java.png";
 import Ruby from "../../images/ruby.png";
@@ -13,8 +13,8 @@ import MongoDB from "../../images/mongodb.png";
 import Django from "../../images/django.png";
 import SQL from "../../images/sql.png";
 
-export class MySkills extends Component {
-  render() {
+export default function MySkills () {
+
     return (
       <div>
         {" "}
@@ -162,6 +162,6 @@ export class MySkills extends Component {
       </div>
     );
   }
-}
 
-export default MySkills;
+
+
