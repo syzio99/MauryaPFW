@@ -1,0 +1,86 @@
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #010106;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+        url("../../images/BlackBg4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 860px;
+    width: 100% max-width 1100px;
+    padding-top: 10rem;
+}
+
+.resumeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+}
+
+
+.resumeHeading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 64px !important;
+}
+
+.Orange-text{
+    color: #f55422;
+ 
+}
+
+
+.TopLine{
+  color: #fff;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+}
+
+
+.contact-tag{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.contact-ani{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 64px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .resumeContainer {
+        height: 1100px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .resumeContainer {
+        height: 1300px;
+    }
+
+    .resumeHeading {
+        font-size: 2rem;
+
+    }
+    .contact-tag{
+        font-size: 32px;
+      
+    }
+    .contact-ani{
+        padding-bottom: 64px;
+    }
+    .contact-right{
+        padding-bottom: 64px;
+    }
+}

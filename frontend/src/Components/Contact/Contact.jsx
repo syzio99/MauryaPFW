@@ -1,33 +1,43 @@
 import React from "react";
-
 import { Emailer } from "./Emailer";
+import Lottie from "react-lottie";
+import animationData from "../../Lottie/contact.json";
+import "./ContactStyle.css";
 
 export default function Contact() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <section id="contact" className="resumeContainer">
-          <div className="container resumeWrapper">
-            <div className="row ">
-            <h1 class="text-center pb-5">Contact</h1>
-              
-            </div>
-            <div className="row ">
-              <div className="col-md-6">
-              <h3>Let's talk about</h3>
-              <h1>everything! </h1>
-               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-               maiores quo, omnis doloremque blanditiis, recusandae iusto culpa
-                 fugiat hic facere enim quas! Sed vero nostrum nemo aspernatur.
-                 Eos, in debitis?
-               </p>
-              </div>
-
-              <div className="col-md-6">
-                <Emailer />
-              </div>
+      <div className="container resumeWrapper">
+        <div className="row ">
+          <h1 class="text-center resumeHeading pb-5">Contact</h1>
+        </div>
+        <div className="row ">
+          <div className="col-md-6 col-sm-12">
+            <div className="contact-ani">
+              <Lottie options={defaultOptions} />
             </div>
           </div>
-        </section>
+
+          <div className="col-md-6 col-sm-12">
+            <div className="contact-right">
+            <h1 className="contact-tag ">
+              Ready to get <span className="Orange-text">started?</span>
+            </h1>
+            <Emailer />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
