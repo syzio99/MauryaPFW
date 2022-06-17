@@ -15,10 +15,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="resumeContainer">
-      <div className="container resumeWrapper">
+    <section id="contact" className="contactContainer">
+      <div className="container contactWrapper">
         <div className="row ">
-          <h1 class="text-center resumeHeading pb-5">Contact</h1>
+          <h1 class="text-center contactHeading pb-5">Contact</h1>
         </div>
         <div className="row ">
           <div className="col-md-6 col-sm-12">

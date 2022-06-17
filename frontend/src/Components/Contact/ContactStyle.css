@@ -1,4 +1,4 @@
-.resumeContainer {
+.contactContainer {
     display: flex;
     flex-direction: column;
     background-color: #010106;
@@ -13,7 +13,7 @@
     padding-top: 10rem;
 }
 
-.resumeWrapper {
+.contactWrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex;
@@ -21,7 +21,7 @@
 }
 
 
-.resumeHeading {
+.contactHeading {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px !important;
@@ -56,7 +56,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .resumeContainer {
+    .contactContainer {
         height: 1100px;
     }
 
@@ -65,11 +65,11 @@
 
 
 @media screen and (max-width: 480px) {
-    .resumeContainer {
+    .contactContainer {
         height: 1300px;
     }
 
-    .resumeHeading {
+    .contactHeading {
         font-size: 2rem;
 
     }
