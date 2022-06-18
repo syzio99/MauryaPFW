@@ -23,24 +23,21 @@ const Services = () => {
             <ServicesIcon src={Icon1} />
             <ServicesH2>Frontend Development</ServicesH2>
             <ServicesP>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
-                dijnsjkhnsknslkslk
+            Let me put together a Stunning UI for your website. I work with newest front-end frameworks like React.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
             <ServicesH2>Backend Development </ServicesH2>
             <ServicesP>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
-              veniam magni quibusdam nesciunt,
+            Need your website putting together? Let me handle that. I work with cross-platform runtime environment like Node.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3} />
             <ServicesH2>Software Development </ServicesH2>
             <ServicesP>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
-              veniam magni quibusd
+            Perhaps you want to create an application. I can make it happen. 
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>

@@ -186,7 +186,8 @@
 .portfolio-card-image {
     display: block;
     width: 100%;
-    height: auto;
+    /* height: ; */
+    height: 350px;
 }
 
 .portfolio-overlay-title{
@@ -240,7 +241,7 @@
     transform: translate(0, 0);
     transition: all 0.2 ease-in-out;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -276,6 +277,10 @@
         padding-bottom: 5rem;
     }
 
+    .portfolio-card-image {
+        height: 450px;
+    }
+
 }
 
 
@@ -290,4 +295,8 @@
         font-size: 2rem;
 
     }
+
+.portfolio-card-image {
+    height: 450px;
+}
 }

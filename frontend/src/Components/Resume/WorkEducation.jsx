@@ -17,12 +17,12 @@ export class WorkEducation extends Component {
           </div>
           <div class="card">
             <div class="info">
-              <h3 class="title">Bachelor of Technology - Computer Science & Engineering;</h3>
+              <h3 class="title">Bachelor of Technology - Computer Science & Engineering</h3>
               <small className=" bg-base-color mb-2 fw-bold">
                 06/2017 - 07/2021{" "}
               </small>
               <p>
-                SRM INSTITUTE of SCIENCE AND TECHNOLOGY, NCR Campus
+              SRM Institute of Science and Technology, NCR Campus
               </p>
             </div>
           </div>
