@@ -16,7 +16,7 @@ import {
 import HomeVideo from "./assets/HomeVideo2.mp4";
 import { Button } from "../ButtonElements";
 import {FaLinkedinIn,FaGithubAlt,FaTwitter } from "react-icons/fa"  
-
+import Fade from 'react-reveal/Fade';
 
 
 export default function Home() {
@@ -32,8 +32,11 @@ export default function Home() {
         <VideoBG autoPlay loop muted src={HomeVideo} type="video/mp4" />
       </HomeBG>
       <HomeContent>
+        <Fade top>
         <HomeP>HI THERE, I'M </HomeP>
         <HomeH1>Shubham Maurya</HomeH1>
+        </Fade>
+        
         <HomeH1>
           <TypeWriterEffect
             textStyle={{
@@ -54,7 +57,9 @@ export default function Home() {
             multiTextLoop
           />
         </HomeH1>
-        <SocailIcon>
+
+        <Fade bottom>
+          <SocailIcon>
           <SocialIconLink
             href="https://www.linkedin.com/in/syzio99/"
             target="_blank"
@@ -77,7 +82,6 @@ export default function Home() {
             <FaTwitter />
           </SocialIconLink>
         </SocailIcon>
-
         <HomeBtnWrapper>
           <Button
             to="about"
@@ -94,6 +98,8 @@ export default function Home() {
             See More About me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HomeBtnWrapper>
+        </Fade>
+        
         
       </HomeContent>
     </HomeContainer>

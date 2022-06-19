@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithubAlt } from "react-icons/fa";
+import Flip from 'react-reveal/Flip';
 
 export default function PortfolioCard({
   CardImage,
@@ -8,6 +9,7 @@ export default function PortfolioCard({
   ReporLink,
 }) {
   return (
+    <Flip left>
     <div>
       <div className="Portfolio-card">
         <img src={CardImage} className="portfolio-card-image img-fluid" alt="..." />
@@ -22,5 +24,7 @@ export default function PortfolioCard({
         </div>
       </div>
     </div>
+    </Flip>
+
   );
 }

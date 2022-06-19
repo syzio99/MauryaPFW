@@ -278,7 +278,7 @@
     }
 
     .portfolio-card-image {
-        height: 450px;
+        height: 220px;
     }
 
 }
@@ -297,6 +297,6 @@
     }
 
 .portfolio-card-image {
-    height: 450px;
+    height: auto;
 }
 }

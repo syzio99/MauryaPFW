@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-
+import Fade from 'react-reveal/Fade';
 export class WorkEducation extends Component {
   render() {
     return (
-        <div class="timeline">
-        <div class="outer">
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Associate – Oracle Consultant</h3>
+      <Fade>
+                <div className="timeline">
+        <div className="outer">
+          <div className="card">
+            <div className="info">
+              <h3 className="title">Associate – Oracle Consultant</h3>
               <small className=" bg-base-color mb-2 fw-bold">
                 {" "}
                 06/2021 – Present{" "}
@@ -15,9 +16,9 @@ export class WorkEducation extends Component {
               <p>PriceWaterhouseCoopers (PwC), Bangalore</p>
             </div>
           </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Bachelor of Technology - Computer Science & Engineering</h3>
+          <div className="card">
+            <div className="info">
+              <h3 className="title">Bachelor of Technology - Computer Science & Engineering</h3>
               <small className=" bg-base-color mb-2 fw-bold">
                 06/2017 - 07/2021{" "}
               </small>
@@ -26,9 +27,10 @@ export class WorkEducation extends Component {
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Intern – Web Developer</h3>
+
+          <div className="card">
+            <div className="info">
+              <h3 className="title">Intern – Web Developer</h3>
               <small className=" bg-base-color mb-2 fw-bold">
                 {" "}
                 06/2019 - 07/2019{" "}
@@ -38,6 +40,8 @@ export class WorkEducation extends Component {
           </div>
         </div>
       </div>
+      </Fade>
+
     )
   }
 }

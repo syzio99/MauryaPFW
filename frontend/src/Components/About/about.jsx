@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ButtonElements";
 // import {useNavigate} from 'react-router-dom';
+import Fade from 'react-reveal/Slide';
 import {
   AboutContainer,
   AboutWrapper,
@@ -45,8 +46,9 @@ const About = ({id,
       <AboutContainer lightBg={lightBg}  id={id}>
         <AboutWrapper>
           <AboutRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
+          
+          <Column1>
+              <Fade left big><TextWrapper>
                 <TopLine>{topline}</TopLine>
                 <Heading lightText={lightText} >{headline}</Heading>
                 <Subtitle darkText={darkText} >{description}</Subtitle>
@@ -61,13 +63,17 @@ const About = ({id,
                   dark = {dark ? 1 : 0}
                   >{ButtonLabel}</Button>
                 </BtnWrap>
-              </TextWrapper>
+              </TextWrapper></Fade>
             </Column1>
+          
+         
             <Column2>
-              <ImgWrap>
-                <Img src={img} />
+             
+               <ImgWrap> <Fade right>
+                <Img src={img} /> </Fade>
               </ImgWrap>
             </Column2>
+           
           </AboutRow>
         </AboutWrapper>
       </AboutContainer>

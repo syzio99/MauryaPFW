@@ -15,7 +15,7 @@ export default function Resume() {
   return (
     <section id="resume" className="resumeContainer">
       <div className="container resumeWrapper">
-        <h1 class="text-center pb-5">Resume</h1>
+        <h1 className="text-center pb-5">Resume</h1>
         <div className="row ">
           <div className="col-md-12">
             <ul className="nav nav-pills mb-3  " id="myTab" role="tablist">
