@@ -17,9 +17,9 @@ export default function Contact() {
     },
   };
 
-  const SERVICE_ID = "service_y6omtr4";
-  const TEMPLATE_ID = "template_8rwt51k";
-  const USER_ID = "X0d9S5bYjhtFgl2Z4";
+  const SERVICE_ID = "your service id ";
+  const TEMPLATE_ID = "your template id";
+  const USER_ID = "your user id";
 
   const [show, setShow] = useState(true);
   var errorOccured = false;
